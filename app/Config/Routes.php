@@ -32,6 +32,7 @@ $routes->group('admin', ['filter' => 'auth:admin'], function($routes) {
     $routes->get('menu/edit/(:num)', 'MenuController::edit/$1');
     $routes->post('menu/update/(:num)', 'MenuController::update/$1');
     $routes->get('menu/hapus/(:num)', 'MenuController::hapus/$1');
+    $routes->get('menu/toogle/(:num)', 'MenuController::toggle/$1');
     $routes->post('menu/toggle/(:num)', 'MenuController::toggle/$1');
 
     // Transaksi
